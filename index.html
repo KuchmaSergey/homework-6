@@ -464,8 +464,8 @@
           <form class="connect=form" id="connect-form">
             <input type="mail" class="mail-form" placeholder="E-mail">
             <button class="btn-connect" type="submit">Подписаться</button>
-            <svg>
-              <use href="">
+            <svg class="send-icon">
+              <use href="./img/sprite2.svg.svg#icon-send">
               </use>
           </svg>
           </form>
@@ -483,11 +483,17 @@
                       fill="#000" />
               </svg>
           </button>
-          <form class="order" id="order-form">
-            <input type="text">
-            <input type="tel">
-            <input type="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+          <p class="callbeck">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="order">
+            <label class="labelform" for="user-name">Имя</label>
+            <input id="user-name" type="text" name="user-name">
+            <label class="labelform" for="tel">Телефон</label>
+            <input id="tel" type="tel" name="tel">
+            <label class="labelform" for="email">Почта</label>
+            <input id="email" type="email" name="email">
+            <label class="labelform" for="coment">Коментарий</label>
+            <textarea class="txtarea labelform" name="coment" id="coment" cols="30" rows="10"
+            placeholder="Введите текст"></textarea>
           </form>
       </div>
   </div>
