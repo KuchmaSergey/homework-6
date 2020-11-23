@@ -461,9 +461,9 @@
     </div>
       <div class="connecten">
         <p class="connect">Подпишитесь на рассылку</p>
-          <form class="connect=form" id="connect-form">
-            <input type="mail" class="mail-form" placeholder="E-mail">
-            <button class="btn-connect" type="submit">Подписаться</button>
+          <form class="connect-form" id="connect-form">
+            <input class="input-connect" type="mail" placeholder="E-mail">
+            <button class="btn-connect footer-btn" type="submit">Подписаться</button>
             <svg class="send-icon">
               <use href="./img/sprite2.svg.svg#icon-send">
               </use>
@@ -475,25 +475,65 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
           <button class="close-button" type="button" data-modal-close>
-              <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="made-close">
+              <svg class="closes">
+                  <use href="./img/sprite6.svg#Vector-5">
+                  </use>
+              </svg>
+            </div>
+              <!-- <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="15" cy="15" r="15" fill="#fff" />
                   <circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1" />
                   <path
                       d="M21 10.108L19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108z"
                       fill="#000" />
-              </svg>
+              </svg> -->
           </button>
           <p class="callbeck">Оставьте свои данные, мы вам перезвоним</p>
           <form class="order">
-            <label class="labelform" for="user-name">Имя</label>
-            <input id="user-name" type="text" name="user-name">
-            <label class="labelform" for="tel">Телефон</label>
-            <input id="tel" type="tel" name="tel">
-            <label class="labelform" for="email">Почта</label>
-            <input id="email" type="email" name="email">
-            <label class="labelform" for="coment">Коментарий</label>
-            <textarea class="txtarea labelform" name="coment" id="coment" cols="30" rows="10"
-            placeholder="Введите текст"></textarea>
+            <div>
+              <label class="labelform" for="user-name">Имя</label>
+                <div  class="input-poss">
+                  <input class="input-name" id="user-name" type="text" name="user-name" placeholder=" ">
+                  <svg class="nameses">
+                    <use href="./img/sprite4.svg.svg#Vector-4">
+                    </use>
+                </svg>
+                </div>
+            </div>
+            <div>
+                <label class="labelform" for="tel">Телефон</label>
+                  <div class="input-poss">
+                    <input  class="input-name" id="tel" type="tel" name="tel" placeholder=" ">
+                    <svg class="nameses">
+                      <use href="./img/sprite2.svg.svg#Vector-1">
+                      </use>
+                  </svg>
+                  </div>
+            </div>
+            <div>
+              <label class="labelform" for="email">Почта</label>
+                <div class="input-poss">
+                  <input class="input-name" id="email" type="email" name="email" placeholder=" ">
+                    <svg class="nameses">
+                      <use href="./img/sprite2.svg.svg#Vector-3">
+                      </use>
+                    </svg>
+                </div>
+            </div>
+            <div>
+              <label class="labelform" for="coment">Коментарий</label>
+              <textarea class="txtarea" name="coment" id="coment" cols="30" rows="10"
+              placeholder="Введите текст"></textarea>
+          </div>
+          <div class="acception">
+            <label class="activation" for="acception">
+              <input class="check"  id="acception" type="checkbox">
+              <span class="check-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="yeslink" href=""> Условия договора</a>
+          </label>
+          </div>
           </form>
       </div>
   </div>
