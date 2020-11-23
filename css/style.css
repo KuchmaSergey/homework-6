@@ -588,7 +588,10 @@ address {
     background-origin: border-box;
     background-image: url(../img/sprite7.svg#Vector-7);
     background-size: contain;
-  }
+}
+.check:focus + .check-icon {
+    outline: 3px solid black;
+}
 
 .yeslink {
     margin-left: 5px;
