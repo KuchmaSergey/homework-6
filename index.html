@@ -40,8 +40,9 @@
         </ul>
       </div>
     </header>
-      <section class="hero dark-bg hero-bag ">
-        <div class="container-hero ">
+    <!-- HERO -->
+      <section class="hero dark-bg">
+        <div class="container">
           <div class="hero-content">
         <h1 class="page-title title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="btn hero-btn" data-modal-open>Заказать услугу</button>
@@ -400,7 +401,7 @@
       </div>
     </section>
   
-    <footer class="fotter dark-bg">
+    <footer class="footer dark-bg">
       <div class="wrapper container">
       <div>
       <a href="./" class="logofot link">Web<span class="logo-part">Studio</span></a>
@@ -463,11 +464,11 @@
         <p class="connect">Подпишитесь на рассылку</p>
           <form class="connect-form" id="connect-form">
             <input class="input-connect" type="mail" placeholder="E-mail">
-            <button class="btn-connect footer-btn" type="submit">Подписаться</button>
-            <svg class="send-icon">
-              <use href="./img/sprite2.svg.svg#icon-send">
-              </use>
-          </svg>
+            <button class="btn-connect" type="submit">Подписаться
+              <svg class="send-icon">
+                <use href="./img/sprite2.svg.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
       </div>
     </div>
@@ -521,20 +522,23 @@
                     </svg>
                 </div>
             </div>
-            <div>
+            <div class="txtarea-wrapper">
               <label class="labelform" for="coment">Коментарий</label>
-              <textarea class="txtarea" name="coment" id="coment" cols="30" rows="10"
+              <textarea class="txtarea" name="coment" id="coment" rows="10"
               placeholder="Введите текст"></textarea>
-          </div>
-          <div class="acception">
+            </div>
+            <div>
+              
             <label class="activation" for="acception">
               <input class="check"  id="acception" type="checkbox">
               <span class="check-icon"></span>
               Соглашаюсь с рассылкой и принимаю
               <a class="yeslink" href=""> Условия договора</a>
           </label>
-          <button class="btn-connect" type="submit">Отправить</button>
-          </div>
+            </div>
+            <div>
+            <button class="btn modal-form-btn" type="submit">Отправить</button>
+            </div>
           </form>
       </div>
   </div>
